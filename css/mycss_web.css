@@ -1,1 +1,93 @@
-/* Milestone 2 - web css */
+/* ========= WEB STYLES (desktop) ========= */
+
+/* TAG selectors */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  line-height: 1.5;
+}
+
+h1 {
+  margin-bottom: 8px;
+}
+
+p {
+  max-width: 900px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin: 4px 0;
+}
+
+/* IMAGES */
+img {
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+
+/* TABLE */
+table {
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 900px;
+}
+
+table, th, td {
+  border: 1px solid #444;
+}
+
+th, td {
+  padding: 8px;
+}
+
+/* FORM */
+form {
+  max-width: 500px;
+  padding: 12px;
+  border: 1px solid #444;
+  border-radius: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  box-sizing: border-box;
+}
+
+/* ID selectors */
+#top {
+  padding: 14px;
+  border: 2px solid #444;
+  border-radius: 12px;
+  margin-bottom: 18px;
+}
+
+/* CLASS selector (we’ll use this next step) */
+.card {
+  padding: 14px;
+  border: 1px solid #888;
+  border-radius: 12px;
+  margin: 16px 0;
+}
+
+/* PRINT (required) */
+@media print {
+  iframe, form { display: none; }
+  body { margin: 0; }
+  a::after { content: " (" attr(href) ")"; }
+}
+
