@@ -1,1 +1,57 @@
-/* Milestone 2 - tablet css */
+/* ========= TABLET STYLES (smaller screens) ========= */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+p {
+  max-width: 100%;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Lists */
+ul {
+  padding-left: 18px;
+}
+li {
+  margin: 6px 0;
+}
+
+/* Images */
+img {
+  width: 180px; /* smaller image on tablet */
+  border-radius: 10px;
+}
+
+/* Table fits small screen */
+table {
+  width: 100%;
+  font-size: 14px;
+}
+
+/* Form fits small screen */
+form {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
