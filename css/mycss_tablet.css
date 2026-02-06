@@ -55,3 +55,10 @@ input, textarea {
   padding: 8px;
   box-sizing: border-box;
 }
+
+#menu {
+  border: 2px solid #444;
+  padding: 10px;
+  border-radius: 8px;
+}
+
