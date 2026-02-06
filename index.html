@@ -1,12 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>George LaTorre | CUS1172 Milestone 01</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>George LaTorre | CUS1172 Milestone 02</title>
 
-<link rel="stylesheet" href="css/mycss_web.css" media="screen and (min-width: 901px)">
+  <!-- External CSS (responsive) -->
+  <link rel="stylesheet" href="css/mycss_web.css" media="screen and (min-width: 901px)">
   <link rel="stylesheet" href="css/mycss_tablet.css" media="screen and (max-width: 900px)">
-  
+
+  <!-- Internal CSS (requirement: at least one style via <style> tag) -->
+  <style>
+    /* Simple internal styling example */
+    .highlight {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    /* Print responsive design (requirement: print media) */
+    @media print {
+      #menu, .backtotop {
+        display: none;
+      }
+      body {
+        font-size: 12pt;
+      }
+      a::after {
+        content: " (" attr(href) ")";
+        font-size: 10pt;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -14,33 +38,38 @@
   <!-- ===================== -->
   <!-- TITLE + MENU -->
   <!-- ===================== -->
-  <div id="top">
-    <h1>George LaTorre - CUS1172 Online Profile</h1>
+  <div id="top" class="section">
+    <!-- Inline style example (requirement: at least one inline style attribute) -->
+    <h1 style="letter-spacing: 1px;">George LaTorre - CUS1172 Online Profile</h1>
 
     <p>
-      Welcome to my first milestone for <span><b>CUS1172 Web Application Development, please enjoy some of the links i offer.</b></span>.
+      Welcome to my Milestone 02 page for
+      <span class="highlight">CUS1172 Web Application Development</span>.
+      Use the menu to jump to each section.
     </p>
 
-    <h2>Menu</h2>
-    <ul>
-      <li><a href="#profile">Basic Profile</a></li>
-      <li><a href="#education">Education Summary</a></li>
-      <li><a href="#work">Work Experience</a></li>
-      <li><a href="#skills">Programming Skills</a></li>
-      <li><a href="#interests">General Interests</a></li>
-      <li><a href="#favorites">Favorite Song / Movie / TV</a></li>
-      <li><a href="#websites">Favorite Websites</a></li>
-      <li><a href="#projects">My Projects in this Course</a></li>
-      <li><a href="#contact">Contact Form</a></li>
-    </ul>
+    <div id="menu">
+      <h2>Menu</h2>
+      <ul class="menu-list">
+        <li><a href="#profile">Basic Profile</a></li>
+        <li><a href="#education">Education Summary</a></li>
+        <li><a href="#work">Work Experience</a></li>
+        <li><a href="#skills">Programming Skills</a></li>
+        <li><a href="#interests">General Interests</a></li>
+        <li><a href="#favorites">Favorite Song / Movie / TV</a></li>
+        <li><a href="#websites">Favorite Websites</a></li>
+        <li><a href="#projects">My Projects in this Course</a></li>
+        <li><a href="#contact">Contact Form</a></li>
+      </ul>
+    </div>
   </div>
 
   <hr>
 
- 
-  1) PROFILE 
-  
-  <div id="profile">
+  <!-- ===================== -->
+  <!-- 1) BASIC PROFILE -->
+  <!-- ===================== -->
+  <div id="profile" class="section">
     <h2>1) Basic Profile Information</h2>
 
     <p>
@@ -50,27 +79,27 @@
       <b>School:</b> St. John’s University
     </p>
 
-    <img src="profile.JPG" width="220" alt="My Profile Picture">
-
-    >
+    <!-- Make sure the filename matches EXACTLY (case-sensitive) -->
+    <img class="profile-pic" src="profile.JPG" width="220" alt="My Profile Picture">
   </div>
 
   <hr>
 
-  2) EDUCATION SUMMARY 
-  
-  <div id="education">
+  <!-- ===================== -->
+  <!-- 2) EDUCATION SUMMARY -->
+  <!-- ===================== -->
+  <div id="education" class="section">
     <h2>2) Education Summary</h2>
 
     <p>
       I am currently pursuing a BS in Information Technology at St. John’s University.
       I am also continuing to develop leadership and teamwork skills through Army ROTC while building technical
-      skills in programming, networking, and web development, i was formerly an Infantryman in the U.S Army, having 
-      joined in 2019, i have been to many parts of the world. From Kansas to Alaska, to Korea and Germany, to Greece and Poland.
-      Once my contract was done, I chose to attend St John's to further my education and begin training in I.T.
+      skills in programming, networking, and web development. I was formerly an Infantryman in the U.S Army.
+      I have traveled and trained in many locations including Kansas, Alaska, Korea, Germany, Greece, and Poland.
+      After my contract ended, I chose to attend St. John’s to further my education and begin training in I.T.
     </p>
 
-    <ul>
+    <ul class="bullet-list">
       <li>St. John’s University</li>
       <li>BS in Information Technology (In Progress)</li>
       <li>Minor in Military Science (Army ROTC)</li>
@@ -79,31 +108,31 @@
 
   <hr>
 
-  
-  3) WORK EXPERIENCE
-  
-  <div id="work">
+  <!-- ===================== -->
+  <!-- 3) WORK EXPERIENCE -->
+  <!-- ===================== -->
+  <div id="work" class="section">
     <h2>3) Work Experience / Internships</h2>
 
-    <ul>
+    <ul class="bullet-list">
       <li>Army ROTC leadership and training experience</li>
-      <li>US Army Infantryman 2019-2023</li>
-      <li>Fort Knox, Kentucky Summer Training </li>
-      <li>Fort Bragg, South Carolina Summer Leadership Training</li>
+      <li>US Army Infantryman (2019–2023)</li>
+      <li>Fort Knox, Kentucky – Summer Training</li>
+      <li>Fort Bragg, North Carolina – Summer Leadership Training</li>
     </ul>
   </div>
 
   <hr>
 
-  
-  4) PROGRAMMING SKILLS 
- 
-  <div id="skills">
+  <!-- ===================== -->
+  <!-- 4) PROGRAMMING SKILLS -->
+  <!-- ===================== -->
+  <div id="skills" class="section">
     <h2>4) Programming Skills</h2>
 
     <p>Here is a table of my technical skills and experience level.</p>
 
-    <table border="1" cellpadding="8">
+    <table class="skills-table" border="1" cellpadding="8">
       <tr>
         <th>Language / Tool</th>
         <th>Level</th>
@@ -138,13 +167,13 @@
 
   <hr>
 
- 
-  5) GENERAL INTERESTS
-  
-  <div id="interests">
+  <!-- ===================== -->
+  <!-- 5) GENERAL INTERESTS -->
+  <!-- ===================== -->
+  <div id="interests" class="section">
     <h2>5) General Interests</h2>
 
-    <ul>
+    <ul class="bullet-list">
       <li>Web development</li>
       <li>Networking and cybersecurity</li>
       <li>Leadership and training (Army ROTC)</li>
@@ -154,116 +183,119 @@
 
   <hr>
 
-  
-  6) FAVORITES
- 
-  <div id="favorites">
+  <!-- ===================== -->
+  <!-- 6) FAVORITES -->
+  <!-- ===================== -->
+  <div id="favorites" class="section">
     <h2>6) Favorite Song, Movie, and TV Show</h2>
 
-    <p><b>Favorite Song:Space Cowboy</b></p>
-    <iframe width="560" height="315"
-  src="https://www.youtube.com/embed/xGoNOFHBzz0"
-  title="Favorite Song"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen>
-</iframe>
+    <p><b>Favorite Song: Space Cowboy</b></p>
+    <iframe class="video"
+      width="560" height="315"
+      src="https://www.youtube.com/embed/xGoNOFHBzz0"
+      title="Favorite Song"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
 
+    <p><b>Favorite Movie: Total Recall</b></p>
+    <iframe class="video"
+      width="560" height="315"
+      src="https://www.youtube.com/embed/-KFH--_cdiI"
+      title="Favorite Movie Trailer"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
 
-    <p><b>Favorite Movie:Total Recall</b></p>
-    <iframe width="560" height="315"
-  src="https://www.youtube.com/embed/-KFH--_cdiI"
-  title="Favorite Movie Trailer"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen>
-</iframe>
-
-
-    <p><b>Favorite TV Show:Arrested Development</b></p>
-    <iframe width="560" height="315"
-  src="https://www.youtube.com/embed/ZFdbh7oeQrU"
-  title="Favorite TV Show"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen>
-</iframe>
-
+    <p><b>Favorite TV Show: Arrested Development</b></p>
+    <iframe class="video"
+      width="560" height="315"
+      src="https://www.youtube.com/embed/ZFdbh7oeQrU"
+      title="Favorite TV Show"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
   </div>
 
   <hr>
 
-  
-  7) FAVORITE WEBSITES 
-  
-  <div id="websites">
+  <!-- ===================== -->
+  <!-- 7) FAVORITE WEBSITES -->
+  <!-- ===================== -->
+  <div id="websites" class="section">
     <h2>7) Favorite Websites</h2>
 
-    <p>Sites i visit a lot:</p>
+    <p>Sites I visit a lot:</p>
 
-    <ul>
+    <ul class="bullet-list">
       <li>
-        <a href="https://vimm.net/" target="_blank">Vimm's lair:a site dedicated to videogame nostalgia, if you like video games and don't know about this site, you'll thank me ;)</a>
+        <a href="https://vimm.net/" target="_blank">Vimm’s Lair</a>
+        - a site dedicated to video game nostalgia.
       </li>
       <li>
-        <a href="https://downloads.khinsider.com/" target="_blank">khinsider:a site dedicated to videogame music</a>
+        <a href="https://downloads.khinsider.com/" target="_blank">KHInsider</a>
+        - a site dedicated to video game music.
       </li>
       <li>
-        <a href="https://fmhy.net/" target="_blank">free media heck yeah:The largest collection of free stuff on the internet</a>
+        <a href="https://fmhy.net/" target="_blank">FMHY</a>
+        - a large collection of free resources.
       </li>
     </ul>
   </div>
 
   <hr>
 
-  
-  8) PROJECTS 
-  
-  <div id="projects">
+  <!-- ===================== -->
+  <!-- 8) PROJECTS -->
+  <!-- ===================== -->
+  <div id="projects" class="section">
     <h2>8) My Projects in This Course</h2>
 
-    <ul>
-      <li>
-        <a href="#top">Project 1 - Milestone 01 (This Profile Page)</a>
-      </li>
+    <ul class="bullet-list">
+      <li><a href="#top">Project 1 - Milestone 01 (This Profile Page)</a></li>
     </ul>
 
-    <p>
-      And more to come....
-    </p>
+    <p>And more to come....</p>
   </div>
 
- <hr>
+  <hr>
 
-<div id="contact">
-  <h2>9) Contact Form</h2>
-  <p>Lets compare notes:</p>
+  <!-- ===================== -->
+  <!-- 9) CONTACT FORM -->
+  <!-- ===================== -->
+  <div id="contact" class="section">
+    <h2>9) Contact Form</h2>
+    <p>Practice form (not connected to email):</p>
 
-  <form>
-    <p>
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" required>
-    </p>
+    <form class="contact-form">
+      <p>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required>
+      </p>
 
-    <p>
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required>
-    </p>
+      <p>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+      </p>
 
-    <p>
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="4" cols="40" required></textarea>
-    </p>
+      <p>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="40" required></textarea>
+      </p>
 
-    <p>
-      <input type="submit" value="Submit">
-      <input type="reset" value="Clear">
-    </p>
-  </form>
-</div>
+      <p>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+      </p>
+    </form>
+  </div>
 
+  <hr>
 
-  <p><a href="#top">Back to top</a></p>
+  <p class="backtotop"><a href="#top">Back to top</a></p>
 
 </body>
 </html>
