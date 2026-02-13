@@ -18,6 +18,46 @@ body.milestone3-theme {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
 }
 
+
+.milestone3-theme .navbar {
+  padding: 0.75rem 1rem;
+  background: linear-gradient(90deg, #1f2a56 0%, #2c215d 100%) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.milestone3-theme .navbar-brand {
+  font-size: 1.7rem;
+  letter-spacing: 0.02em;
+}
+
+.milestone3-theme .navbar-nav {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.milestone3-theme .navbar .nav-item {
+  margin: 0;
+}
+
+.milestone3-theme .navbar .nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 600;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+}
+
+.milestone3-theme .navbar .nav-link:hover,
+.milestone3-theme .navbar .nav-link:focus {
+  background: rgba(255, 255, 255, 0.15);
+  text-decoration: none;
+}
+
+.milestone3-theme .navbar-text {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
 .hero-header {
   background: linear-gradient(120deg, rgba(16, 24, 60, 0.92), rgba(39, 22, 78, 0.9));
   color: #fff;
