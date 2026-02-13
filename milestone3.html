@@ -6,19 +6,21 @@
   <title>George LaTorre - CUS1172 Online Profile (Bootstrap)</title>
 
   <!-- Bootstrap 4 CSS (CDN) -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.2/css/bootstrap.min.css">
 
   <!-- Your Milestone 2 CSS (keep using it) -->
   <link rel="stylesheet" href="css/mycss_web.css" />
   <link rel="stylesheet" media="screen and (max-width: 900px)" href="css/mycss_tablet.css" />
 </head>
 
-<body>
+<body id="top">
 
-  <!-- Bootstrap element #1: Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+  <!-- Bootstrap element #1: NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom sticky-top">
     <a class="navbar-brand font-weight-bold" href="index.html">CUS1172</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu"
+      aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -38,60 +40,40 @@
     </div>
   </nav>
 
-  <!-- Bootstrap element #2: Jumbotron / header area -->
+  <!-- Bootstrap element #2: JUMBOTRON -->
   <header class="jumbotron jumbotron-fluid mb-0">
     <div class="container">
       <h1 class="display-4">George LaTorre - CUS1172 Online Profile</h1>
       <p class="lead mb-0">
-        This is my Milestone 03 page using Bootstrap grid + Bootstrap components, while still using my Milestone 02 CSS.
+        Welcome to my Milestone 03 page (Bootstrap version). Use the menu to jump to each section.
       </p>
     </div>
   </header>
 
   <main class="container my-4">
 
-    <!-- ROW/COLUMNS (Bootstrap Grid) -->
-    <section id="profile" class="mb-4">
-      <h2>1) Basic Profile Information</h2>
+    <!-- Bootstrap element #3: ALERT (optional but counts as a Bootstrap component) -->
+    <div class="alert alert-secondary">
+      This page uses Bootstrap 4 layout (containers, rows, columns) while keeping my Milestone 2 CSS.
+    </div>
 
+    <!-- 1) BASIC PROFILE -->
+    <section id="profile" class="mb-5">
+      <h2 class="mb-3">1) Basic Profile Information</h2>
+
+      <!-- BOOTSTRAP GRID (rows + columns) -->
       <div class="row">
+        <div class="col-md-4 mb-3">
+          <img src="profile.JPG" class="img-fluid rounded profile-pic" alt="My Profile Picture">
+        </div>
+
         <div class="col-md-8">
-          <!-- Bootstrap element #3: Card -->
-          <div class="card mb-3">
-            <div class="card-body">
-              <p class="mb-1"><strong>Name:</strong> George LaTorre</p>
-              <p class="mb-1"><strong>Major:</strong> Information Technology</p>
-              <p class="mb-1"><strong>Minor:</strong> Military Science (Army ROTC)</p>
-              <p class="mb-0"><strong>School:</strong> St. John’s University</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 text-center">
-          <img class="img-fluid rounded border" src="profile.JPG" alt="My Profile Picture" style="max-width: 220px;">
-        </div>
-      </div>
-    </section>
-
-    <hr>
-
-    <section id="education" class="mb-4">
-      <h2>2) Education Summary</h2>
-
-      <div class="row">
-        <div class="col-lg-8">
-          <p>
-            I am currently pursuing a BS in Information Technology at St. John’s University. I’m also developing leadership
-            and teamwork skills through Army ROTC while building technical skills in programming, networking, and web development.
-          </p>
-        </div>
-
-        <div class="col-lg-4">
-          <!-- Bootstrap element #4: List group -->
+          <!-- Bootstrap element #4: LIST GROUP -->
           <ul class="list-group">
-            <li class="list-group-item">St. John’s University</li>
-            <li class="list-group-item">BS in Information Technology (In Progress)</li>
-            <li class="list-group-item">Minor in Military Science (Army ROTC)</li>
+            <li class="list-group-item"><strong>Name:</strong> George LaTorre</li>
+            <li class="list-group-item"><strong>Major:</strong> Information Technology</li>
+            <li class="list-group-item"><strong>Minor:</strong> Military Science (Army ROTC)</li>
+            <li class="list-group-item"><strong>School:</strong> St. John’s University</li>
           </ul>
         </div>
       </div>
@@ -99,29 +81,30 @@
 
     <hr>
 
-    <section id="work" class="mb-4">
-      <h2>3) Work Experience / Internships</h2>
+    <!-- 2) EDUCATION SUMMARY -->
+    <section id="education" class="mb-5">
+      <h2 class="mb-3">2) Education Summary</h2>
 
       <div class="row">
-        <div class="col-md-6">
-          <div class="card mb-3">
-            <div class="card-body">
-              <h5 class="card-title mb-2">Army / ROTC Experience</h5>
-              <ul class="mb-0">
-                <li>Army ROTC leadership and training experience</li>
-                <li>US Army Infantryman (2019–2023)</li>
-              </ul>
-            </div>
-          </div>
+        <div class="col-lg-8">
+          <p>
+            I am currently pursuing a BS in Information Technology at St. John’s University.
+            I am also continuing to develop leadership and teamwork skills through Army ROTC while building
+            technical skills in programming, networking, and web development. I was formerly an Infantryman in the U.S Army.
+            I have traveled and trained in many locations including Kansas, Alaska, Korea, Germany, Greece, and Poland.
+            After my contract ended, I chose to attend St. John’s to further my education and begin training in I.T.
+          </p>
         </div>
 
-        <div class="col-md-6">
-          <div class="card mb-3">
+        <div class="col-lg-4">
+          <!-- Bootstrap element #5: CARD -->
+          <div class="card">
             <div class="card-body">
-              <h5 class="card-title mb-2">Training Locations</h5>
+              <h5 class="card-title">Quick Facts</h5>
               <ul class="mb-0">
-                <li>Fort Knox, Kentucky — Summer Training</li>
-                <li>Fort Bragg, North Carolina — Summer Leadership Training</li>
+                <li>St. John’s University</li>
+                <li>BS in Information Technology (In Progress)</li>
+                <li>Minor in Military Science (Army ROTC)</li>
               </ul>
             </div>
           </div>
@@ -131,13 +114,49 @@
 
     <hr>
 
-    <section id="skills" class="mb-4">
-      <h2>4) Programming Skills</h2>
+    <!-- 3) WORK EXPERIENCE -->
+    <section id="work" class="mb-5">
+      <h2 class="mb-3">3) Work Experience / Internships</h2>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Leadership / Training</h5>
+              <ul class="mb-0">
+                <li>Army ROTC leadership and training experience</li>
+                <li>Fort Knox, Kentucky — Summer Training</li>
+                <li>Fort Bragg, North Carolina — Summer Leadership Training</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Military Experience</h5>
+              <ul class="mb-0">
+                <li>US Army Infantryman (2019–2023)</li>
+                <li>Worked in team-based environments</li>
+                <li>Experience with discipline and responsibility</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- 4) PROGRAMMING SKILLS -->
+    <section id="skills" class="mb-5">
+      <h2 class="mb-3">4) Programming Skills</h2>
       <p>Here is a table of my technical skills and experience level.</p>
 
-      <!-- Bootstrap element #5: Styled table -->
+      <!-- Bootstrap element #6: TABLE -->
       <div class="table-responsive">
-        <table class="table table-bordered table-striped mb-2">
+        <table class="table table-bordered table-striped">
           <thead class="thead-light">
             <tr>
               <th>Language / Tool</th>
@@ -170,26 +189,33 @@
         </table>
       </div>
 
-      <em>My goal this semester is to build stronger front-end web skills.</em>
+      <p><em>My goal this semester is to build stronger front-end web skills.</em></p>
     </section>
 
     <hr>
 
-    <section id="interests" class="mb-4">
-      <h2>5) General Interests</h2>
+    <!-- 5) GENERAL INTERESTS -->
+    <section id="interests" class="mb-5">
+      <h2 class="mb-3">5) General Interests</h2>
 
       <div class="row">
         <div class="col-md-6">
-          <ul class="list-group">
-            <li class="list-group-item">Web development</li>
-            <li class="list-group-item">Networking and cybersecurity</li>
-            <li class="list-group-item">Leadership and training (Army ROTC)</li>
-            <li class="list-group-item">Gaming and PC building</li>
+          <ul>
+            <li>Web development</li>
+            <li>Networking and cybersecurity</li>
+            <li>Leadership and training (Army ROTC)</li>
+            <li>Gaming and PC building</li>
           </ul>
         </div>
         <div class="col-md-6">
-          <div class="alert alert-secondary">
-            Bootstrap grid is being used here: one list on the left, one card/box on the right.
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Why these interests?</h5>
+              <p class="mb-0">
+                I like combining technical learning with leadership development, and I enjoy building projects that I can
+                improve over time.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -197,38 +223,35 @@
 
     <hr>
 
-    <section id="favorites" class="mb-4">
-      <h2>6) Favorite Song, Movie, and TV Show</h2>
+    <!-- 6) FAVORITES -->
+    <section id="favorites" class="mb-5">
+      <h2 class="mb-3">6) Favorite Song, Movie, and TV Show</h2>
 
       <div class="row">
-        <div class="col-lg-6 mb-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Favorite Song: Space Cowboy</h5>
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JN0YhYkB7yU" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 mb-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Favorite Movie: Total Recall</h5>
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WFMLGEHdIjE" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Favorite TV Show: Arrested Development</h5>
+        <div class="col-lg-4 mb-4">
+          <h5>Favorite Song: Space Cowboy</h5>
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v2rVYbZ8Yf4" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item"
+              src="https://www.youtube.com/embed/OPkjnRIdQXQ"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <h5>Favorite Movie: Total Recall</h5>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item"
+              src="https://www.youtube.com/embed/WFMLGEHdIjE"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <h5>Favorite TV Show: Arrested Development</h5>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item"
+              src="https://www.youtube.com/embed/3t7Vwz3G8YY"
+              allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -236,36 +259,84 @@
 
     <hr>
 
-    <section id="websites" class="mb-4">
-      <h2>7) Favorite Websites</h2>
-      <ul>
-        <li><a href="https://vimm.net/" target="_blank" rel="noopener">Vimm’s Lair</a> - a site dedicated to video game nostalgia.</li>
-        <li><a href="https://downloads.khinsider.com/" target="_blank" rel="noopener">KHInsider</a> - a site dedicated to video game music.</li>
-        <li><a href="https://fmhy.net/" target="_blank" rel="noopener">FMHY</a> - a large collection of free resources.</li>
-      </ul>
+    <!-- 7) FAVORITE WEBSITES -->
+    <section id="websites" class="mb-5">
+      <h2 class="mb-3">7) Favorite Websites</h2>
+      <p>Sites I visit a lot:</p>
+
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Vimm’s Lair</h5>
+              <p class="card-text">A site dedicated to video game nostalgia.</p>
+              <a class="btn btn-outline-primary" href="https://vimm.net/" target="_blank" rel="noopener">Visit</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">KHInsider</h5>
+              <p class="card-text">A site dedicated to video game music.</p>
+              <a class="btn btn-outline-primary" href="https://downloads.khinsider.com/" target="_blank" rel="noopener">Visit</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">FMHY</h5>
+              <p class="card-text">A large collection of free resources.</p>
+              <a class="btn btn-outline-primary" href="https://fmhy.net/" target="_blank" rel="noopener">Visit</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <hr>
 
-    <section id="projects" class="mb-4">
-      <h2>8) My Projects in This Course</h2>
+    <!-- 8) PROJECTS -->
+    <section id="projects" class="mb-5">
+      <h2 class="mb-3">8) My Projects in This Course</h2>
 
-      <ul>
-        <li><a href="index.html">Project 1 - Milestone 01/02 (Profile Page)</a></li>
-        <li><a href="milestone3.html">Project 1 (Continued) - Milestone 03 (Bootstrap Version)</a></li>
-      </ul>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Project 1 - Milestone 01/02</h5>
+              <p class="card-text">My original profile page.</p>
+              <a class="btn btn-primary" href="index.html">Open Profile Page</a>
+            </div>
+          </div>
+        </div>
 
-      <p>And more to come….</p>
+        <div class="col-md-6 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Project 1 (Continued) - Milestone 03</h5>
+              <p class="card-text">This Bootstrap version of the profile page.</p>
+              <a class="btn btn-primary" href="milestone3.html">Open Milestone 03</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="mt-3">And more to come...</p>
     </section>
 
     <hr>
 
+    <!-- 9) CONTACT FORM -->
     <section id="contact" class="mb-5">
-      <h2>9) Contact Form</h2>
+      <h2 class="mb-3">9) Contact Form</h2>
       <p>Practice form (not connected to email):</p>
 
-      <!-- Bootstrap element #6: Form styling + buttons -->
-      <form>
+      <!-- Bootstrap element #7: FORM + BUTTONS -->
+      <form class="p-3 border rounded" style="max-width: 650px;">
         <div class="form-group">
           <label for="name">Name:</label>
           <input class="form-control" id="name" type="text" placeholder="Enter your name">
@@ -289,10 +360,10 @@
     <a class="btn btn-outline-dark" href="#top">Back to top</a>
   </main>
 
-  <!-- Bootstrap 4 JS (CDN) -->
+  <!-- Bootstrap 4 JS (CDN) - put at bottom, right before </body> -->
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
