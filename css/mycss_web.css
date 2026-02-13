@@ -4,6 +4,75 @@ body {
   line-height: 1.6;
 }
 
+body.milestone3-theme {
+  margin: 0;
+  color: #1f1f2a;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.45), transparent 35%),
+    radial-gradient(circle at 85% 10%, rgba(104, 156, 255, 0.25), transparent 28%),
+    linear-gradient(135deg, #dce6ff 0%, #f2e4ff 45%, #ffe9df 100%);
+  background-attachment: fixed;
+}
+
+.milestone3-theme .navbar {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.hero-header {
+  background: linear-gradient(120deg, rgba(16, 24, 60, 0.92), rgba(39, 22, 78, 0.9));
+  color: #fff;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero-tagline {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+.milestone3-theme .card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 12px 30px rgba(21, 26, 53, 0.12);
+}
+
+.milestone3-theme .card-header {
+  background: linear-gradient(90deg, #2f3f7a, #5f3d8d);
+  color: #fff;
+  border-bottom: none;
+}
+
+.milestone3-theme .btn-outline-dark {
+  border-color: #42307a;
+  color: #42307a;
+}
+
+.milestone3-theme .btn-outline-dark:hover {
+  background: #42307a;
+  color: #fff;
+}
+
+.milestone3-theme .progress {
+  height: 1.2rem;
+  border-radius: 999px;
+  background: #ece8ff;
+}
+
+.milestone3-theme .progress-bar {
+  background: linear-gradient(90deg, #6a5df0, #4ec0ff);
+  font-weight: bold;
+}
+
+.milestone3-theme .list-group-item {
+  border-color: #e8e3ff;
+}
+
 div {
   padding: 10px;
 }
