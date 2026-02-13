@@ -1,1 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>George LaTorre | CUS1172 Milestone 03 (Bootstrap)</title>
+
+  <!-- Bootstrap 4 CSS (CDN) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.2/css/bootstrap.min.css">
+
+  <!-- Your Milestone 2 CSS (keep these!) -->
+  <link rel="stylesheet" href="css/mycss_web.css" media="screen and (min-width: 901px)">
+  <link rel="stylesheet" href="css/mycss_tablet.css" media="screen and (max-width: 900px)">
+</head>
+
+<body>
+
+  <!-- Bootstrap NAVBAR (Bootstrap element #1) -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light border rounded mb-3 sticky-top">
+    <a class="navbar-brand font-weight-bold" href="#top">Milestone 03</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav"
+      aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+        <li class="nav-item"><a class="nav-link" href="#favorites">Favorites</a></li>
+        <li class="nav-item"><a class="nav-link" href="#websites">Websites</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Bootstrap BUTTON (Bootstrap element #2) -->
+      <a class="btn btn-outline-dark btn-sm" href="index.html">Back to Milestone 02</a>
+    </div>
+  </nav>
+
+  <div class="container" id="top">
+
+    <!-- Bootstrap JUMBOTRON (Bootstrap element #3) -->
+    <div class="jumbotron py-4">
+      <h1 class="display-4">George LaTorre - CUS1172 Online Profile</h1>
+      <p class="lead mb-0">
+        This is my <b>Milestone 03</b> version using <span class="badge badge-primary">Bootstrap 4</span>.
+      </p>
+    </div>
+
+    <!-- ===================== -->
+    <!-- 1) BASIC PROFILE -->
+    <!-- ===================== -->
+    <div id="profile" class="card mb-4">
+      <div class="card-body">
+        <h2 class="card-title">1) Basic Profile Information</h2>
+
+        <!-- Bootstrap GRID (row/col) -->
+        <div class="row">
+          <div class="col-md-8">
+            <p class="mb-2">
+              <b>Name:</b> George LaTorre <br>
+              <b>Major:</b> Information Technology <br>
+              <b>Minor:</b> Military Science (Army ROTC) <br>
+              <b>School:</b> St. John’s University
+            </p>
+
+            <!-- Bootstrap ALERT (Bootstrap element #4) -->
+            <div class="alert alert-secondary mb-0" role="alert">
+              Using Bootstrap grid + components, while still applying my Milestone 2 CSS.
+            </div>
+          </div>
+
+          <div class="col-md-4 text-md-right mt-3 mt-md-0">
+            <img class="profile-pic img-fluid rounded border" src="profile.JPG" alt="My Profile Picture">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== -->
+    <!-- 2) EDUCATION SUMMARY -->
+    <!-- ===================== -->
+    <div id="education" class="card mb-4">
+      <div class="card-body">
+        <h2 class="card-title">2) Education Summary</h2>
+
+        <p>
+          I am currently pursuing a BS in Information Technology at St. John’s University.
+          I am also continuing to develop leadership and teamwork skills through Army ROTC while building technical
+          skills in programming, networking, and web development. I was formerly an Infantryman in the U.S Army.
+          I have traveled and trained in many locations including Kansas, Alaska, Korea, Germany, Greece, and Poland.
+          After my contract ended, I chose to attend St. John’s to further my education and begin training in I.T.
+        </p>
+
+        <!-- Bootstrap LIST GROUP (Bootstrap element #5) -->
+        <ul class="list-group">
+          <li class="list-group-item">St. John’s University</li>
+          <li class="list-group-item">BS in Information Technology (In Progress)</li>
+          <li class="list-group-item">Minor in Military Science (Army ROTC)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ===================== -->
+    <!-- 3) WORK EXPERIENCE -->
+    <!-- ===================== -->
+    <div id="work" class="card mb-4">
+      <div class="card-body">
+        <h2 class="card-title">3) Work Experience / Internships</h2>
+
+        <ul class="bullet-list">
+          <li>Army ROTC leadership and training experience</li>
+          <li>US Army Infantryman (2019–2023)</li>
+          <li>Fort Knox, Kentucky – Summer Training</li>
+          <li>Fort Bragg, North Carolina – Summer Leadership Training</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ===================== -->
+    <!-- 4) PROGRAMMING SKILLS -->
+    <!-- ===================== -->
+    <div id="skills" class="card mb-4">
+      <div class="card-body">
+        <h2 class="card-title">4) Programming Skills</h2>
+        <p>Here is a table of my technical skills and experience level.</p>
+
+        <!-- Bootstrap TABLE (Bootstrap element #6) -->
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped skills-table">
+            <thead class="thead-light">
+              <tr>
+                <th>Language / Tool</th>
+                <th>Level</th>
+                <th>Example Use</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HTML</td>
+                <td>Beginner</td>
+                <td>Building this website</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>Beginner</td>
+                <td>Learning page design and layout</td>
+              </tr>
+              <tr>
+                <td>Java</td>
+                <td>Intermediate</td>
+                <td>Eclipse assignments and projects</td>
+              </tr>
+              <tr>
+                <td>Cisco Packet Tracer</td>
+                <td>Intermediate</td>
+                <td>Subnetting, router and switch configuration</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p><i>My goal this semester is to build stronger front-end web skills.</i></p>
+      </div>
+    </div>
+
+    <!-- ===================== -->
+    <!-- 5) GENERAL INTERESTS -->
+    <!-- ===================== -->
+    <div id="interests" class="card mb-4">
+      <div class="card-body">
+        <h2 class="card-title">5) General Interests</h2>
+        <ul class="bullet-list">
+          <li>Web development</li>
+          <li>Networking and cybersecurity</li>
+          <li>Leadership and training (Army ROTC)</li>
+          <li>Gaming and PC building</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ===================== -->
+    <!-- 6) FAVORITES -->
+    <!-- ===================== -->
+    <div id="favorites" class="card mb-4">
+      <div class="card-body">
+        <h2 class="card-title">6) Favorite Song, Movie, and TV Show</h2>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <p><b>Favorite Song: Space Cowboy</b></p>
+            <div class="embed-responsive embed-responsive-16by9 mb-3">
+              <iframe class="embed-responsive-item"
+                src="https://www.youtube.com/embed/xGoNOFHBzz0"
+                title="Favorite Song" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <p><b>Favorite Movie: Total Recall</b></p>
+            <div class="embed-responsive embed-responsive-16by9 mb-3">
+              <iframe class="embed-responsive-item"
+                src="https://www.youtube.com/embed/-KFH--_cdiI"
+                title="Favorite Movie Trailer" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <p><b>Favorite TV Show: Arrested Development</b></p>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item"
+            src="https://www.youtube.com/embed/ZFdbh7oeQrU"
+            title="Favorite TV Show" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== -->
+    <!-- 7) FAVORITE WEBSITES -->
+    <!-- ===================== -->
+    <div id="websites" class="card mb-4">
+      <div class="card-body">
+        <h2 class="card-title">7) Favorite Websites</h2>
+        <p>Sites I visit a lot:</p>
+
+        <ul class="bullet-list">
+          <li><a href="https://vimm.net/" target="_blank" rel="noopener">Vimm’s Lair</a> - video game nostalgia</li>
+          <li><a href="https://downloads.khinsider.com/" target="_blank" rel="noopener">KHInsider</a> - game music</li>
+          <li><a href="https://fmhy.net/" target="_blank" rel="noopener">FMHY</a> - free resources</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ===================== -->
+    <!-- 8) PROJECTS -->
+    <!-- ===================== -->
+    <div id="projects" class="card mb-4">
+      <div class="card-body">
+        <h2 class="card-title">8) My Projects in This Course</h2>
+
+        <ul class="bullet-list">
+          <li><a href="index.html">Project 1 - Milestone 02</a></li>
+          <li><a href="milestone3.html">Project 1 - Milestone 03 (Bootstrap)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ===================== -->
+    <!-- 9) CONTACT FORM -->
+    <!-- ===================== -->
+    <div id="contact" class="card mb-4">
+      <div class="card-body">
+        <h2 class="card-title">9) Contact Form</h2>
+        <p>Practice form (not connected to email):</p>
+
+        <!-- Bootstrap FORM styling (Bootstrap element #7) -->
+        <form>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input class="form-control" type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input class="form-control" type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+          </div>
+
+          <button class="btn btn-dark" type="submit">Submit</button>
+          <button class="btn btn-secondary" type="reset">Clear</button>
+        </form>
+      </div>
+    </div>
+
+    <p class="text-center backtotop">
+      <a class="btn btn-outline-secondary btn-sm" href="#top">Back to top</a>
+    </p>
+
+  </div>
+
+  <!-- Bootstrap 4 JS (required for navbar toggle) -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.2/js/bootstrap.min.js"></script>
+</body>
+</html>
 
