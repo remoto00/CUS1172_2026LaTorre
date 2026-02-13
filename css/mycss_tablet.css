@@ -4,6 +4,37 @@ body {
   line-height: 1.6;
 }
 
+body.milestone3-theme {
+  margin: 0;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.45), transparent 40%),
+    linear-gradient(135deg, #dce6ff 0%, #f2e4ff 55%, #ffe9df 100%);
+}
+
+.milestone3-theme .hero-header {
+  background: linear-gradient(120deg, rgba(16, 24, 60, 0.95), rgba(39, 22, 78, 0.93));
+  color: #fff;
+}
+
+.milestone3-theme .hero-tagline {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.12);
+  font-size: 0.9rem;
+}
+
+.milestone3-theme .card {
+  border-radius: 14px;
+  border: none;
+  box-shadow: 0 8px 22px rgba(21, 26, 53, 0.14);
+}
+
+.milestone3-theme .card-header {
+  background: linear-gradient(90deg, #2f3f7a, #5f3d8d);
+  color: #fff;
+}
 div {
   padding: 8px;
 }
