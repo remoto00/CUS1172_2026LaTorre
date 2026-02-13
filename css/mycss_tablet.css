@@ -35,6 +35,36 @@ body.milestone3-theme {
   background: linear-gradient(90deg, #2f3f7a, #5f3d8d);
   color: #fff;
 }
+
+
+.milestone3-theme .navbar {
+  padding: 0.65rem 0.9rem;
+  background: linear-gradient(90deg, #1f2a56 0%, #2c215d 100%) !important;
+}
+
+.milestone3-theme .navbar-nav {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.6rem 0 0;
+}
+
+.milestone3-theme .navbar .nav-item {
+  margin: 0.2rem 0;
+}
+
+.milestone3-theme .navbar .nav-link {
+  color: rgba(255, 255, 255, 0.95) !important;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 0.45rem 0.7rem;
+}
+
+.milestone3-theme .navbar .nav-link:hover,
+.milestone3-theme .navbar .nav-link:focus {
+  background: rgba(255, 255, 255, 0.14);
+  text-decoration: none;
+}
+
 div {
   padding: 8px;
 }
