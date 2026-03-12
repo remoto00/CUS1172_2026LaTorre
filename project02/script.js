@@ -32,14 +32,16 @@ function displayTask(task) {
     const li = document.createElement("li");
     li.className = "list-group-item";
 
-    li.innerHTML = `
+   li.innerHTML = `
+    <span class="task-text">
         <strong>${task.title}</strong>
         | Priority: ${task.priority}
         | Status: <span class="status">${task.status}</span>
+    </span>
 
-        <button class="btn btn-success btn-sm ms-2 complete">Complete</button>
-        <button class="btn btn-danger btn-sm ms-2 remove">Remove</button>
-    `;
+    <button class="btn btn-success btn-sm ms-2 complete">Complete</button>
+    <button class="btn btn-danger btn-sm ms-2 remove">Remove</button>
+`;
 
     taskList.appendChild(li);
 
@@ -47,8 +49,8 @@ function displayTask(task) {
     const removeBtn = li.querySelector(".remove");
 
     completeBtn.onclick = function() {
-        li.classList.add("completed");
-    };
+    li.querySelector(".task-text").classList.add("completed");
+};
 
     removeBtn.onclick = function() {
 
