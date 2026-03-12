@@ -10,6 +10,10 @@ li{
     margin-top:10px;
 }
 
+.task-text{
+    display:inline-block;
+}
+
 .completed{
     text-decoration: line-through;
     color: gray;
