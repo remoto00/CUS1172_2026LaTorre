@@ -44,7 +44,7 @@ function displayTask(task) {
     const removeBtn = li.querySelector(".remove");
 
     completeBtn.onclick = function() {
-        li.style.textDecoration = "line-through";
+        li.classList.add("completed");
     };
 
     removeBtn.onclick = function() {
