@@ -1,4 +1,5 @@
 let tasks = [];
+let taskId = 0;
 
 const form = document.getElementById("taskForm");
 const taskList = document.getElementById("taskList");
@@ -12,12 +13,14 @@ form.onsubmit = function(event) {
     const status = document.querySelector('input[name="status"]:checked').value;
 
     const task = {
-        title: title,
-        priority: priority,
-        status: status
+    id: taskId,
+    title: title,
+    priority: priority,
+    status: status
     };
 
     tasks.push(task);
+    taskId++;
 
     displayTask(task);
 
@@ -48,6 +51,10 @@ function displayTask(task) {
     };
 
     removeBtn.onclick = function() {
-        li.remove();
-    };
+
+    tasks = tasks.filter(t => t.id !== task.id);
+
+    li.remove();
+
+};
 }
